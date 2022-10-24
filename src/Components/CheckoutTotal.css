@@ -1,0 +1,24 @@
+.checkout{
+    display: flex;
+    border-bottom: 1px solid gainsboro;
+  }
+
+  .checkout:last-child{
+    border-bottom: none;
+  }
+
+  .checkout__info{
+    padding-left: 20px;
+  }
+
+  .checkout__image{
+    object-fit: contain;
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+  }
+
+  .checkout__title{
+    font-size: 15px;
+    font-weight: 450;
+  }
