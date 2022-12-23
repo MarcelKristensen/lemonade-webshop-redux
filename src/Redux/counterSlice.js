@@ -15,7 +15,6 @@ export const counterSlice = createSlice({
       } else {
         state.cart.push({ ...action.payload, quantity: 1 });
       }
-      console.log(addToCart);
     },
 
     incrementQuantity: (state, action) => {
@@ -43,7 +42,5 @@ export const counterSlice = createSlice({
 
 export const { addToCart, incrementQuantity, decrementQuantity, removeItem } =
   counterSlice.actions;
-
-export const selectCount = (state) => state.counter.value;
 
 export default counterSlice.reducer;
